@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Final Project Emerging Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="icon.png">
+  </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <span class="logo_name">WEB JOURNAL</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">
+          <i class='bx bx-home-alt' ></i>
+          <span class="link_name">Home</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="index.html">Home</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Topic</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="#" href="Introduction to Emerging Technology.html">Introduction to <br> Emerging Technologies</a></li>
+          <li><a href="Technology and Ethics.html">Technology and Ethics</a></li>
+          <li><a href="ai.html">Artificial Intelligence</a></li>
+          <li><a href="iot.html">Internet of Things</a></li>
+          <li><a href="ar.html">Augmented Reality</a></li>
+          <li><a href="ds.html">Data Science</a></li>
+          <li><a href="Nanotechnology.html">Nanotechnology</a></li>
+          <li><a href="Cloud and Quantum Computing.html">Cloud and Quantum Computing</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-info-circle' ></i>
+            <span class="link_name">About me</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">About me</a></li>
+          <li><a href="https://www.facebook.com/francis.renoblasjubane"><box-icon name='facebook-circle' type='logo' ></box-icon>Facebook</a></li>
+          <li><a href="https://www.tiktok.com/@franchiskoo810"><box-icon type='logo' name='tiktok'></box-icon> TikTok</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-contact' ></i>
+            <span class="link_name">Contact</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Contact</a></li>
+          <li><a href=mailto:"francisjubane600@gmail.com"><box-icon name='gmail' type='logo' ></box-icon>Gmail</a></li>
+          <li><a href=" tel:09632750979"><box-icon name='mobile'></box-icon>Mobile No.</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://phlconnect.ched.gov.ph/content/view/instructor-guide-application-development-and-emerging-technologies">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Explore More</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Explore More</a></li>
+        </ul>
+      </li>
+      <li>
+     <div class="profile-details">
+      <div class="profile-content">
+      </div>
+      <div class="name-position">
+        <div class="profile_name">Francis Jubane</div>
+        <div class="position">Student</div>
+      </div>
+       </div>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Augmented Reality</span>
+    </div>
+    <div class="content">
+        <h2>What is Augmented Reality</h2>
+        <br><p>Augmented Reality is a technology that allows digitally generated 3D Objects to be overlaid in real-world scenarios.​ The virtual objects shows up on the screen in the real environment together with the AR device’s camera input. This way the users can interact with both the physical world  and the virtual object enriching the experience with data<br><br></p>
+      <div class="youtube">
+        <h3>The Rise of Technology</h3>
+        <iframe width="852" height="480" src="https://www.youtube-nocookie.com/embed/XLP4YTpUpBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h1><center> APPLICATION IN AR SYSTEM</center></h1>
+      <h3>AR IN GAMING</h3><br>
+      <p>AR games such as Pokémon Go and Harry Potter: Wizards Unite allow users to interact with virtual objects in the real world.</p><br>
+      <h3>AR IN EDUCATION</h3><br>
+      <p> Creates immersive and interactive learning experiences by simulating experiments, creating virtual field trips, and enhancing textbooks.</p><br>
+      <h3>AR IN RETAIL</h3><br>
+      <p>Enhances the shopping experience by allowing customers to try on clothes and visualize furniture in their homes.</p><br>
+      <h3>AR IN MARKETING</h3><br>
+      <p>Creates engaging campaigns by blurring the lines between the physical and digital worlds, such as interactive billboards and product demos.</p><br>
+      <h3>AR IN HEALTHCARE</h3><br>
+      <p>Creates medical simulations that help doctors and nurses practice procedures and assist patients in understanding their conditions.</p><br>
+    </div>
+    
+  </section>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
+</html>
